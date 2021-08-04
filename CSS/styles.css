@@ -135,6 +135,7 @@ ul {
 
 .contacts-list .item .icon-navigation:hover{
   fill: var(--accent-text-color);
+  cursor: pointer;
 }
 
 .contacts {
@@ -400,42 +401,81 @@ ul {
 .list-link-team{
   padding-top: 16px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   
+}
+
+.link-team{
+  margin-right: 10px;
 }
 
 .icon-link-team{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  fill: #757575;
+  color: #AFB1B8;
   width: 44px;
   height: 44px;
 }
 
 
 .link-icon{
+  fill: currentColor;
   width: 20px;
   height: 20px;
 }
 
-.link-icon:hover{
-  fill: var(--adress-color);
+.icon-link-team:hover,
+.icon-link-team:focus {
+  background-color: var(--accent-text-color);
+  cursor: pointer;
+  border-radius: 50%;
 }
 
-.link-icon:hover{
+.link-icon:hover,
+.link-icon:focus{
   fill: #fff;
 }
 
-.link-team{
-  width: 44px;
-  height: 44px;
+/* Постоянные клиенты */
+
+.cients{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.link-team:hover{
-  background-color: var(--accent-text-color);
-  border-radius: 50%;
+.clients-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 30px;
+
+  width: 170px;
+  height: 92px;
+  border: solid 1px #AFB1B8;
+  border-radius: 4px;
 }
+
+.clients-list:last-child{
+  margin-right: 0px;
+}
+
+.clients-logo{
+  fill: #AFB1B8;
+
+}
+
+.clients-logo:hover{
+  fill: var(--accent-text-color);
+}
+
+.clients-list:hover{
+  background-color: var(--adress-color);
+  border: solid 1px #2196f3;
+}
+
+
 
 /* Кнопки */
 
