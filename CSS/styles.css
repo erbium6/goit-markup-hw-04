@@ -77,8 +77,6 @@ ul {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
-  
-  
 }
 
 .nav-links .item:not(:last-child) {
@@ -115,27 +113,30 @@ ul {
   display: flex;
   margin-left: auto;
   padding: 0px;
-  
 }
 
 .contacts-list .item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts-list .item{
+.contacts-list .item {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.contacts-list .item .icon-navigation{
+.contacts-list .item .icon-navigation {
   margin-right: 10px;
   fill: var(--pirimary-text-color);
 }
 
-.contacts-list .item .icon-navigation:hover{
+.contacts-list .item .contacts .icon-navigation:hover {
   fill: var(--accent-text-color);
   cursor: pointer;
+}
+
+.contacts:hover .icon-navigation {
+  fill: var(--accent-text-color);
 }
 
 .contacts {
@@ -150,29 +151,28 @@ ul {
   color: var(--pirimary-text-color);
 }
 
-
 /* Hero */
 
 .hero {
-
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
 
   text-align: center;
-  
+
   background-color: #2f303a;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ),  url(../images/hero_bg.jpg);
+    ),
+    url(../images/hero_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  
+
   max-width: 1600px;
-  height: 600px; 
+  height: 600px;
 }
 
 .hero-title {
@@ -186,7 +186,6 @@ ul {
 
   margin-top: 0px;
   margin-bottom: 30px;
-  
 }
 
 .button-hero {
@@ -206,11 +205,10 @@ ul {
   border-color: transparent;
 }
 
-
 /* секкции */
 /* наши преймущества */
 
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -237,7 +235,7 @@ ul {
   margin: 0px;
 }
 
-.section-advantages{
+.section-advantages {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -246,7 +244,6 @@ ul {
   display: flex;
   padding-left: 0px;
 }
-
 
 .feature-list .item {
   width: 270px;
@@ -257,31 +254,31 @@ ul {
   margin-right: 30px;
 }
 
-.advantages-list{
+.advantages-list {
   display: flex;
   width: 270px;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   align-items: center;
   justify-content: space-around;
   border-radius: 4px;
 }
 
-.container-advantages{
+.container-advantages {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
- 
-.container-advantages .icon{
-  background-color: #F5F4FA;
+
+.container-advantages .icon {
+  background-color: #f5f4fa;
   border-radius: 4px;
   align-items: center;
 }
 
 /* Чем мы занимаемся */
 
-.section-examples{
+.section-examples {
   padding-bottom: 94px;
 }
 
@@ -318,7 +315,7 @@ ul {
 
 /* наша команда */
 
-.img-team{
+.img-team {
   display: block;
 }
 
@@ -346,13 +343,12 @@ ul {
   margin-bottom: 10px;
 }
 
-.team-description{
+.team-description {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .text-team {
-
   font-family: Roboto;
   font-weight: normal;
   font-size: 16px;
@@ -398,28 +394,26 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-.list-link-team{
+.list-link-team {
   padding-top: 16px;
   display: flex;
   justify-content: center;
-  
 }
 
-.link-team{
+.link-team {
   margin-right: 10px;
 }
 
-.icon-link-team{
+.icon-link-team {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #AFB1B8;
+  color: #afb1b8;
   width: 44px;
   height: 44px;
 }
 
-
-.link-icon{
+.link-icon {
   fill: currentColor;
   width: 20px;
   height: 20px;
@@ -433,49 +427,57 @@ ul {
 }
 
 .link-icon:hover,
-.link-icon:focus{
+.link-icon:focus {
+  fill: #fff;
+}
+
+.icon-link-team:hover .link-icon {
   fill: #fff;
 }
 
 /* Постоянные клиенты */
 
-.cients{
+.cients {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.clients-list{
+.clients-link {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-right: 30px;
 
   width: 170px;
   height: 92px;
-  border: solid 1px #AFB1B8;
+  border: solid 1px #afb1b8;
   border-radius: 4px;
 }
 
-.clients-list:last-child{
+.clients-list {
+  margin-right: 30px;
+}
+
+.clients-list:last-child {
   margin-right: 0px;
 }
 
-.clients-logo{
-  fill: #AFB1B8;
-
+.clients-logo {
+  fill: #afb1b8;
 }
 
-.clients-logo:hover{
+.clients-logo:hover {
   fill: var(--accent-text-color);
 }
 
-.clients-list:hover{
+.clients-link:hover {
   background-color: var(--adress-color);
   border: solid 1px #2196f3;
 }
 
-
+.clients-link:hover .clients-logo {
+  fill: #2196f3;
+}
 
 /* Кнопки */
 
@@ -525,7 +527,6 @@ ul {
   line-height: 2;
   letter-spacing: 6%;
   color: var(--title-text-color);
-
 }
 
 .text-examples {
@@ -543,7 +544,7 @@ ul {
 .img-portfolio {
   display: block;
   width: 100%;
-  height: auto
+  height: auto;
 }
 
 .portfolio-text {
@@ -552,7 +553,7 @@ ul {
   padding-left: 24px;
   padding-right: 24px;
   border: 1px solid #eeeeee;
-  border-top: none;  
+  border-top: none;
 }
 
 .portfolio-list {
@@ -573,6 +574,15 @@ ul {
 
 .portfolio-list .item:nth-child(-n + 3) {
   margin-top: 0px;
+}
+
+.portfolio-list .item:hover,
+.portfolio-list .item:focus {
+  cursor: pointer;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* footer */
@@ -625,8 +635,65 @@ ul {
   padding: 0px 15px;
 }
 
+.container-footer {
+  display: flex;
+  justify-items: center;
+  align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0px 15px;
+}
+
 ul {
   padding-left: 0px;
   margin-top: 0;
   margin-bottom: 0px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title-links {
+  display: flex;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-adress {
+  margin-right: 70px;
+}
+
+.list-link-team {
+  padding: 0px;
+}
+
+.icon-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-link-footer:hover,
+.icon-link-footer:focus {
+  background-color: var(--accent-text-color);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.icon-link-footer:hover .link-icon {
+  fill: #fff;
+}
+
+.link-team-footer {
+  background-color: rgba(255, 255, 255, 0, 1);
 }
