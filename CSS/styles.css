@@ -670,8 +670,9 @@ ul {
   margin-right: 70px;
 }
 
-.list-link-team {
+.list-link-team-footer {
   padding: 0px;
+  display: flex;
 }
 
 .icon-link-footer {
