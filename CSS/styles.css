@@ -135,7 +135,8 @@ ul {
   cursor: pointer;
 }
 
-.contacts:hover .icon-navigation {
+.contacts:hover .icon-navigation,
+.contacts:focus .icon-navigation {
   fill: var(--accent-text-color);
 }
 
@@ -431,7 +432,8 @@ ul {
   fill: #fff;
 }
 
-.icon-link-team:hover .link-icon {
+.icon-link-team:hover .link-icon,
+.icon-link-team:focus .link-icon {
   fill: #fff;
 }
 
@@ -475,7 +477,8 @@ ul {
   border: solid 1px #2196f3;
 }
 
-.clients-link:hover .clients-logo {
+.clients-link:hover .clients-logo,
+.clients-link:focus .clients-logo {
   fill: #2196f3;
 }
 
